@@ -11,7 +11,7 @@ export class BotService {
   private bot: Telegraf<Context<Update>>;
 
   constructor(@InjectModel('Link') private readonly linkModel: Model<Link>) {
-    this.bot = new Telegraf('6827219070:AAE6S-B3x8KtQbXEI-BPKdAR0uVJ3FV6mRI');
+    this.bot = new Telegraf('-');
 
     this.bot.start((ctx) => ctx.reply('Welcome!'));
 
